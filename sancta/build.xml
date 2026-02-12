@@ -179,4 +179,14 @@
     <target name="dist" depends="build,doc-jar"/>
 
     <target name="rebuild" depends="clean,build"/>
+
+    <target name="scalac">
+        <echo message="Compiling source files to ${build.target.dir}  ${destdir}" />
+        <exec executable="scalac" failonerror="true">
+            <arg line="-cp '${lib.dir}/*'" />
+            <arg line="-d '${build.target.dir}'" />
+            <arg line="@${basedir}/files2compile" />
+        </exec>
+    </target>
+
 </project>
