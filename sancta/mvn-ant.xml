@@ -67,13 +67,19 @@
             <param name="group" value="org/antlr"/>
             <param name="artifact" value="stringtemplate/${stringtemplate.ver}"/>
         </antcall>
-        <!-- antlr3 tool depends on antlr 2.7 -->
-		
+
         <antcall target="require">
-            <param name="group" value="antlr"/>
-            <param name="artifact" value="antlr/${antlr_2.ver}"/>
+            <param name="group" value="org/antlr"/>
+            <param name="artifact" value="stringtemplate/${stringtemplate.ver}"/>
         </antcall>
-		
+
+        <!-- antlr3 tool depends on antlr 2.7 -->
+
+        <antcall target="require">
+            <param name="group" value="org/antlr"/>
+            <param name="artifact" value="ST4/4.3.4"/>
+        </antcall>
+
     </target>
 
     <target name="require-scala">
