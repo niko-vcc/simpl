@@ -180,7 +180,7 @@
 
     <target name="rebuild" depends="clean,build"/>
 
-    <target name="scalac">
+    <!-- <target name="scalac">
         <echo message="Compiling source files to ${build.target.dir}  ${destdir}" />
         <exec executable="scalac" failonerror="true">
             <arg line="-cp '${lib.dir}/*'" />
@@ -188,5 +188,11 @@
             <arg line="@${basedir}/files2compile" />
         </exec>
     </target>
+     -->
+
+<!-- /root/.m2/repository/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar -->
+    <taskdef name="scalac"
+             classpath="/root/.m2/repository/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar"/>
+
 
 </project>
