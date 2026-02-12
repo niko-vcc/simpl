@@ -51,7 +51,7 @@
             </manifest>
             <zipfileset src="${maven.repo.local}/org/antlr/antlr-runtime/${antlr.ver}/antlr-runtime-${antlr.ver}.jar"/>
             <zipfileset src="${maven.repo.local}/org/antlr/stringtemplate/${stringtemplate.ver}/stringtemplate-${stringtemplate.ver}.jar"/>
-            <zipfileset src="${maven.repo.local}/antlr/antlr/${antlr_2.ver}/antlr-${antlr_2.ver}.jar"/>
+            <!-- <zipfileset src="${maven.repo.local}/antlr/antlr/${antlr_2.ver}/antlr-${antlr_2.ver}.jar"/> -->
         </jar>
         <antcall target="actifact-install">
             <param name="src" value="${target}/simplicitas-tool.jar"/>
